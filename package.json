@@ -1,0 +1,42 @@
+{
+  "name": "dsh-open-in-vscode",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness (dsh) Web plugin: open chat file-mention links in VS Code at the referenced line instead of the built-in preview sidebar",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "manifestVersion": 1,
+    "engines": {
+      "dsh": ">=0.2.0",
+      "node": ">=20"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "vscode",
+    "editor-integration",
+    "file-navigation"
+  ],
+  "license": "MIT"
+}

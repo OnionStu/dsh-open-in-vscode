@@ -1,0 +1,4 @@
+# dsh-open-in-vscode bundle patch：把插件包挂进 web profile 的 bundle 栈。
+- insert:
+    - id: open-in-vscode
+      name: 'dsh-open-in-vscode'
