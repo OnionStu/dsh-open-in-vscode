@@ -19,7 +19,7 @@ DSH 消息渲染原生支持文件引用链接，无协议路径加 `#L行号` �
 要求 Node.js 20 以上、pnpm 10。未全局配置 pnpm store 时先执行 `pnpm config set store-dir <全局 store 路径>`。
 
 ```bash
-git clone <本仓库地址> dsh-open-in-vscode
+git clone https://github.com/OnionStu/dsh-open-in-vscode.git dsh-open-in-vscode
 bash dsh-open-in-vscode/scripts/install.sh
 ```
 
